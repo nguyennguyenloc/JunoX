@@ -25,30 +25,38 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar">
       <div class="sidebar-header">
-        <h3>WEB APPLICATION FIREWALL</h3>
+        <p>Web</p>
+        <p>Application</p>
+        <p>Firewall</p>
       </div>
 
       <ul class="list-unstyled components">
-        <li class="active">
-          <a href="#homeSubmenu">
-            <i class="fa fa-home"></i>
+        <li class="active row">
+          <i class="fa fa-home col-2" style="font-size: 40px;"></i>
+          <a class="col-9 " href="#homeSubmenu"
+            style="text-align:center;color:  #303596;border: 1px solid; border-radius: 20px; background-color: white;letter-spacing: 2px;">
             HOME
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-briefcase"></i>
+        <li class="row">
+          <i class="fa fa-briefcase col-2" style="font-size: 40px;"></i>
+          <a href="#" class="col-9 "
+            style="text-align:center;color:  #303596;border: 1px solid; border-radius: 20px; background-color: white;letter-spacing: 2px;">
             ABOUT US
           </a>
-          <a href="#pageSubmenu">
-            <i class="fa fa-files-o"></i>
+        </li>
+        <li class="row">
+          <i class="fa fa-files-o col-2" style="font-size: 40px;"></i>
+          <a href="#pageSubmenu" class="col-9 "
+            style="text-align:center;color:  #303596;border: 1px solid; border-radius: 20px; background-color: white;letter-spacing: 2px;">
             TUTORIAL
           </a>
         </li>
 
-        <li>
-          <a href="#">
-            <i class="fa fa-paper-plane"></i>
+        <li class="row">
+          <i class="fa fa-paper-plane col-2" style="font-size: 40px;"></i>
+          <a class="col-9 " href="#homeSubmenu"
+            style="text-align:center;color:  #303596;border: 1px solid; border-radius: 20px; background-color: white;letter-spacing: 2px;">
             CONTACT
           </a>
         </li>
@@ -63,12 +71,14 @@
             <label class="text-white" for="">
               <h3>Input</h3>
             </label><br />
-            <textarea rows="9" cols="100%" id="input" name="input" placeholder="input" required></textarea><br />
+            <div class="pdTextArea">
+              <textarea rows="9" cols="100%" id="input" name="input" placeholder="input" required></textarea><br />
+            </div>
           </div>
           <br />
           <div>
-            <button class="btn btn-primary" id="btnThem" type="submit">
-              <h3>Generate</h3>
+            <button type="submit">
+              <p>GENERATE</p>
             </button>
           </div>
         </form>
@@ -77,7 +87,9 @@
           <label class="text-white" for="message">
             <h3>Output</h3>
           </label><br />
-          <textarea rows="9" cols="100%" id="Result_TB" name="output" placeholder="output" required></textarea><br />
+          <div class="pdTextArea">
+            <textarea rows="9" cols="100%" id="Result_TB" name="output" placeholder="output" required></textarea><br />
+          </div>
         </div>
       </div>
     </div>
